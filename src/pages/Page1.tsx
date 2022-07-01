@@ -1,5 +1,7 @@
 import {
+  IonBackButton,
   IonButton,
+  IonButtons,
   IonContent,
   IonFooter,
   IonHeader,
@@ -10,26 +12,24 @@ import {
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab1.css";
 
-const Tab1: React.FC = () => {
+const Page1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Nested Page 1</IonTitle>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/tab1" />
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+      <IonContent>
+        <ExploreContainer name="Nested Page 1" />
       </IonContent>
       <IonFooter>
         <IonToolbar>
-          <IonButton expand="block" routerLink="/nested1">
-            To nested page 1
+          <IonButton expand="block" routerLink="/nested2">
+            To nested page 2
           </IonButton>
         </IonToolbar>
       </IonFooter>
@@ -37,4 +37,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Page1;
