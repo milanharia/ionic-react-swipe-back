@@ -1,0 +1,7 @@
+{
+  "name": "React Swipe Back",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
