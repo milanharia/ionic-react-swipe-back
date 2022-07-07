@@ -17,7 +17,7 @@ const Page2: React.FC = () => {
         <IonToolbar>
           <IonTitle>Nested Page 2</IonTitle>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/nested1" />
+            <IonBackButton defaultHref="/tab1/nested1" />
           </IonButtons>
         </IonToolbar>
       </IonHeader>

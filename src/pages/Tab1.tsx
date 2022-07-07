@@ -28,7 +28,7 @@ const Tab1: React.FC = () => {
       </IonContent>
       <IonFooter>
         <IonToolbar>
-          <IonButton expand="block" routerLink="/nested1">
+          <IonButton expand="block" routerLink="/tab1/nested1">
             To nested page 1
           </IonButton>
         </IonToolbar>
